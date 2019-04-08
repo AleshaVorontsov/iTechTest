@@ -1,0 +1,126 @@
+header .vnavbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+header .vnavbar ul {
+  list-style: none;
+}
+
+header .vnavbar a:hover {
+  background-color: #eee;
+}
+
+header .vnavbar .dropdown-large {
+  float: left;
+  overflow: hidden;
+}
+
+header .vnavbar .dropdown-large:hover {
+  background-color: #eee;
+}
+
+header .vnavbar .dropdown-large:hover .dropdown-menu-large {
+  display: block;
+}
+
+header .vnavbar .dropdown-large:hover .dropdown-menu-large li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .vnavbar .dropdown-large .dropdown-link {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+header .vnavbar .dropdown-large .dropdown-menu-large {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #eee;
+  width: 100%;
+  z-index: 1;
+}
+
+header .vnavbar .dropdown-large .dropdown-menu-large .container {
+  padding: 0px;
+}
+
+header .vnavbar .dropdown-large .dropdown-menu-large .container li {
+  padding: 0px;
+}
+
+header .vnavbar .dropdown-large .dropdown-menu-large .container li ul {
+  padding: 0px;
+}
+
+header .vnavbar .dropdown-large .dropdown-menu-large a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+header .vnavbar .dropdown-large .dropdown-menu-large a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.main-catalog {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: auto;
+  text-align: center;
+}
+
+.main-catalog .slider-box {
+  position: relative;
+  margin: auto;
+  display: inline-block;
+  width: 475px;
+  height: 215px;
+  overflow: hidden;
+}
+
+.main-catalog .slider-box .slider {
+  position: relative;
+  width: 10000px;
+  height: 215px;
+}
+
+.main-catalog .slider-box .slider img {
+  float: left;
+}
+
+.main-catalog .slider-box .prev,
+.main-catalog .slider-box .next {
+  position: absolute;
+  top: 170px;
+  display: block;
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 22px;
+  background-color: #030303;
+  color: #fff;
+  opacity: 0.9;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+.main-catalog .slider-box .prev {
+  padding: 6px 6px 4px 4px;
+  left: 10px;
+}
+
+.main-catalog .slider-box .next {
+  padding: 6px 4px 4px 6px;
+  right: 10px;
+}
+/*# sourceMappingURL=inner.css.map */
