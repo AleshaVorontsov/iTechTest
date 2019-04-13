@@ -1,632 +1,593 @@
-﻿<section class="container text-center" id="laptop">
-    <h1>С нами вы молодцы, а без нас нет</h1>
-    <h5>
-        Не следует, однако забывать, что консультация с широким активом требуют определения и уточнения соответствующий
-        условий активизации. Равным образом начало повседневной работы по формированию позиции представляет собой
-        интересный эксперимент проверки систем массового участия.
-    </h5>
-    <a data-toggle="modal" data-target="#request-modal" class="btn btn-primary">Заказать коммерческое предложение</a>
-    <div class="laptop-img center-block"></div>
-</section>
+﻿<!DOCTYPE html>
+<html>
 
-<section class="container text-center" id="composition">
-    <h1>Состав РИАС ЖКХ</h1>
-    <h5>
-        Мизинец - великий актер. И он блестяще справился с ролью мелког
-    </h5>
-    <div class="sphere">
-        <img src="~/lib/landing/images/composition/core_description.png" class="core_description-fadeIn" />
-        <img src="~/lib/landing/images/composition/core.png" class="core-zoomIn" />
-    </div>
-</section>
+<head>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 
-<div class="gray-triangle-up"></div>
-<section id="regions">
-    <div class="grey-background text-center">
+    <link rel="stylesheet" href="slick-slider/slick.css" />
+    <link rel="stylesheet" href="slick-slider/slick-theme.css" />
+
+    <link rel="stylesheet" href="css/inner.css">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <header>
+        <div class="container ">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="images/label.png"></a>
+            </div>
+
+            <div class="vnavbar nav navbar-nav">
+                <div class="service-info-menu">
+                    <ul class="service-info">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Подобрать дом</a></li>
+                    </ul>
+                </div>
+
+                <div class="navigation-menu">
+                    <a href="#">Каталог</a>
+
+                    <div class="dropdown-large">
+                        <a href="#" class="dropdown-link">
+                            Достройка и реконструкция
+                        </a>
+
+                        <ul class="dropdown-menu-large row">
+                            <div class="container">
+                                <li class="col-md-4">
+                                    <ul>
+                                        <div class="sub-menu">
+                                            <li class="dropdown-header underlined">Пристройки</li>
+                                            <li><a href="#">Пристройки к строениям</a></li>
+                                            <li><a href="#">Устройство мансардных этажей</a></li>
+                                        </div>
+                                        <div class="sub-menu">
+                                            <li class="dropdown-header underlined">Достройка домов</li>
+                                            <li><a href="#">Завершение строительства</a></li>
+                                            <li><a href="#">Возведение крыш</a></li>
+                                            <li><a href="#">Объединение строений</a></li>
+                                            <li><a href="#">Устройство отмостки</a></li>
+                                        </div>
+                                        <div class="sub-menu">
+                                            <li class="dropdown-header">Примеры работ</li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="col-md-4">
+                                    <ul>
+                                        <div class="sub-menu">
+                                            <li class="dropdown-header underlined">Ремонт домов</li>
+                                            <li><a href="#">Замена кровли</a></li>
+                                            <li><a href="#">Утепление строений</a></li>
+                                            <li><a href="#">Наружная отделка домов</a></li>
+                                            <li><a href="#">Внутренняя отделка помещений</a></li>
+                                            <li><a href="#">Внутренняя перепланнировка помещений</a></li>
+                                        </div>
+                                        <div class="sub-menu">
+                                            <li class="dropdown-header">Строительство и достройка малых
+                                                архитектурных
+                                                форм</li>
+                                        </div>
+                                        <div class="sub-menu">
+                                            <li class="dropdown-header">Возведение заборов из профлиста</li>
+                                        </div>
+                                    </ul>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <a href="#">Услуги</a>
+
+                    <a href="#">Строительство и производство</a>
+
+                    <a href="#">Примеры домов</a>
+
+                </div>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right contacts">
+                <li>
+                    <button class="callback">
+                        <i class="fa fa-phone" aria-hidden="true"></i>Обратный звонок
+                    </button>
+                </li>
+                <li class="service">
+                    <span class="phone">+7 495 921 33 01</span>
+                    <span class="vl"></span>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="body-content">
+        <div id="wrap"></div>
+        <div id="call-window">
+            <div class="close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></div>
+            <h1>322-223-322</h1>
+            <img src="https://i.ytimg.com/vi/jvJ--fZM9g4/maxresdefault.jpg">
+        </div>
+        <div class="help-buttons">
+            <a href="#" id="call-btn">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </a>
+            <a href="#" id="list-btn">
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+            <a href="#" id="calck-btn">
+                <i class="fa fa-calculator" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div class="slider">
+            <div class="slide slide1"></div>
+            <div class="slide slide2"></div>
+            <div class="slide slide3"></div>
+            <div class="slide slide4">
+                <!-- <h1></h1> -->
+            </div>
+        </div>
+
         <div class="container">
-            <h1>Регионы внедрения</h1>
-            <h5>
-                Мизинец - великий актер. И он блестяще справился с ролью мелког
-            </h5>
-
-            <div class="data-slick">
-
-                <div class="slide">
-                    <h2>Владимир</h2>
-                    <h5>Однажды, в студеную зимнюю пору я из лесу вышел, был сильный мороз. Смотрю, поднимается
-                        медленно в гору с винищем обоз.</h5>
-                    <div class="row">
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="1111" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="2222" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="3333" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <h2>Волгореченск</h2>
-                    <h5>Однажды, в студеную зимнюю пору я из лесу вышел, был сильный мороз. Смотрю, поднимается
-                        медленно в гору с винищем обоз.</h5>
-                    <div class="row">
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="1111" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="2222" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="3333" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <h2>Вологда</h2>
-                    <h5>Однажды, в студеную зимнюю пору я из лесу вышел, был сильный мороз. Смотрю, поднимается
-                        медленно в гору с винищем обоз.</h5>
-                    <div class="row">
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="1111" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="2222" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="3333" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <h2>Грозный</h2>
-                    <h5>Однажды, в студеную зимнюю пору я из лесу вышел, был сильный мороз. Смотрю, поднимается
-                        медленно в гору с винищем обоз.</h5>
-                    <div class="row">
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="1111" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="2222" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="3333" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <h2>Ленинградская область</h2>
-                    <h5>Однажды, в студеную зимнюю пору я из лесу вышел, был сильный мороз. Смотрю, поднимается
-                        медленно в гору с винищем обоз.</h5>
-                    <div class="row">
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="1111" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="2222" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="3333" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <h2>Магнитогорск</h2>
-                    <h5>Однажды, в студеную зимнюю пору я из лесу вышел, был сильный мороз. Смотрю, поднимается
-                        медленно в гору с винищем обоз.</h5>
-                    <div class="row">
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="1111" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="2222" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="3333" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <h2>Мурманск</h2>
-                    <h5>Однажды, в студеную зимнюю пору я из лесу вышел, был сильный мороз. Смотрю, поднимается
-                        медленно в гору с винищем обоз.</h5>
-                    <div class="row">
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="1111" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="2222" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="3333" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <h2>Петербург-ПСК</h2>
-                    <h5>Однажды, в студеную зимнюю пору я из лесу вышел, был сильный мороз. Смотрю, поднимается
-                        медленно в гору с винищем обоз.</h5>
-                    <div class="row">
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="1111" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="2222" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="3333" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <h2>Саранск</h2>
-                    <h5>Однажды, в студеную зимнюю пору я из лесу вышел, был сильный мороз. Смотрю, поднимается
-                        медленно в гору с винищем обоз.</h5>
-                    <div class="row">
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="1111" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="2222" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="3333" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <h2>Сахалин</h2>
-                    <h5>Однажды, в студеную зимнюю пору я из лесу вышел, был сильный мороз. Смотрю, поднимается
-                        медленно в гору с винищем обоз.</h5>
-                    <div class="row">
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="1111" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="2222" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="3333" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <h2>Ульяновск</h2>
-                    <h5>Однажды, в студеную зимнюю пору я из лесу вышел, был сильный мороз. Смотрю, поднимается
-                        медленно в гору с винищем обоз.</h5>
-                    <div class="row">
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="1111" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="2222" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                        <div class="col-md-4 col-xs-4">
-                            <p class="number counter" data-count="3333" id="common-meters">0</p>
-                            <p>Общедомовых счетчиков</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row cities">
-                <div class="col-xs-4">
-                    <p><a href="#" data-num="1">Владимир</a></p>
-                    <p><a href="#" data-num="2">Волгореченск</a></p>
-                    <p><a href="#" data-num="3">Вологда</a></p>
-                    <p><a href="#" data-num="4">Грозный</a></p>
-                </div>
-                <div class="col-xs-4">
-                    <p><a href="#" data-num="5">Ленинградская область</a></p>
-                    <p><a href="#" data-num="6">Магнитогорск</a></p>
-                    <p><a href="#" data-num="7">Мурманск</a></p>
-                    <p><a href="#" data-num="8">Петербург-ПСК</a></p>
-                </div>
-                <div class="col-xs-4">
-                    <p><a href="#" data-num="9">Саранск</a></p>
-                    <p><a href="#" data-num="10">Сахалин</a></p>
-                    <p><a href="#" data-num="11">Ульяновск</a></p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<div class="gray-triangle-down"></div>
-
-<section class="container text-center" id="feature">
-    <h1>Основные преимущества</h1>
-    <h5>
-        Мизинец - великий актер. И он блестяще справился с ролью мелког. Мизинец - великий актер. И он блестяще
-        справился с ролью мелког. Мизинец - великий актер. И он блестяще справился с ролью мелког
-    </h5>
-
-    <div class="row">
-        <div class="col-sm-4 animation1">
-            <div class="feature-img first"></div>
-            <p class="feature-name">Интеграция с<br />федеральными системами</p>
-            <p class="feature-descr">Возможность инеграции с вновь создаваемыми федеральными система Возможность ини
-                система</p>
-        </div>
-        <div class="col-sm-4 animation2">
-            <div class="feature-img second"></div>
-            <p class="feature-name">Легкость<br />изменений</p>
-            <p class="feature-descr">Уменьшение сопротивления организаций к внедрению новых инструме</p>
-        </div>
-        <div class="col-sm-4 animation3">
-            <div class="feature-img third"></div>
-            <p class="feature-name">Интеграция с<br />существующими системами</p>
-            <p class="feature-descr">Не требуется замены существующих систем на новые. Одно из требо</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-4 animation4">
-            <div class="feature-img fourth"></div>
-            <p class="feature-name">Уменьшение<br />затрат</p>
-            <p class="feature-descr">Унификация, автоматизация и централизация бизнес-процессов по р</p>
-        </div>
-        <div class="col-sm-4 animation5">
-            <div class="feature-img fifth"></div>
-            <p class="feature-name">Обмен с<br />федеральными ИС</p>
-            <p class="feature-descr">- Реформа ЖКХ<br />- ГИС ЖКХ<br />- Вновь создаваемые ИС</p>
-        </div>
-        <div class="col-sm-4 animation6">
-            <div class="feature-img sixth"></div>
-            <p class="feature-name">Низкий процент<br />ошибок</p>
-            <p class="feature-descr">Снижение процента ошибок при внесении информации за счет уменьш</p>
-        </div>
-    </div>
-</section>
-
-<div class="gray-triangle-up"></div>
-<section class="grey-background" id="about">
-    <div class="container">
-        <div class="text-center">
-            <h1>О системе</h1>
-            <h5>
-                Мизинец - великий актер. И он блестяще справился с ролью мелког
-            </h5>
-        </div>
-
-        <div class="row">
-            <div class="col-md-5 hidden-sm hidden-xs">
-                <ul class="unnumbered about-list">
-                    <li>
-                        <a href="#" data-num-about="1">
-                            <span class="icon"></span>
-                            Личный кабинет депутата
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-num-about="2">
-                            <span class="icon"></span>
-                            Управляющих компаниях
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-num-about="3">
-                            <span class="icon"></span>
-                            Поставщика коммунальных услуг
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-num-about="4">
-                            <span class="icon"></span>
-                            Лицевых счетах
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-num-about="5">
-                            <span class="icon"></span>
-                            Договорах ресурсоснабжения и управления
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-num-about="6">
-                            <span class="icon"></span>
-                            Общедомовых и индивидульных приборах учета
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-num-about="7">
-                            <span class="icon"></span>
-                            Начислениях и оплате за услуги
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-num-about="8">
-                            <span class="icon"></span>
-                            Жилых домах
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-num-about="9">
-                            <span class="icon"></span>
-                            Управляющих компаниях
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-num-about="10">
-                            <span class="icon"></span>
-                            Поставщиках коммунальных услуг
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-num-about="11">
-                            <span class="icon"></span>
-                            Лицевых счетах
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-num-about="12">
-                            <span class="icon"></span>
-                            Договорах ресурсоснабжения и управления
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-num-about="13">
-                            <span class="icon"></span>
-                            Общедомовых и индивидульных приборах учета
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-num-about="14">
-                            <span class="icon"></span>
-                            Начислениях и оплате за услуги
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-md-7">
-                <div class="data-slick-about">
-                    <div class="slide">
-                        <img src="~/lib/landing/images/about/tablet_screenshoot1.png" />
-                    </div>
-                    <div class="slide">
-                        <img src="~/lib/landing/images/about/tablet_screenshoot2.png" />
-                    </div>
-                    <div class="slide">
-                        <img src="~/lib/landing/images/about/tablet_screenshoot3.png" />
-                    </div>
-                    <div class="slide">
-                        <img src="~/lib/landing/images/about/tablet_screenshoot4.png" />
-                    </div>
-                    <div class="slide">
-                        <img src="~/lib/landing/images/about/tablet_screenshoot5.png" />
-                    </div>
-                    <div class="slide">
-                        <img src="~/lib/landing/images/about/tablet_screenshoot6.png" />
-                    </div>
-                    <div class="slide">
-                        <img src="~/lib/landing/images/about/tablet_screenshoot7.png" />
-                    </div>
-                    <div class="slide">
-                        <img src="~/lib/landing/images/about/tablet_screenshoot8.png" />
-                    </div>
-                    <div class="slide">
-                        <img src="~/lib/landing/images/about/tablet_screenshoot9.png" />
-                    </div>
-                    <div class="slide">
-                        <img src="~/lib/landing/images/about/tablet_screenshoot10.png" />
-                    </div>
-                    <div class="slide">
-                        <img src="~/lib/landing/images/about/tablet_screenshoot11.png" />
-                    </div>
-                    <div class="slide">
-                        <img src="~/lib/landing/images/about/tablet_screenshoot12.png" />
-                    </div>
-                    <div class="slide">
-                        <img src="~/lib/landing/images/about/tablet_screenshoot13.png" />
-                    </div>
-                    <div class="slide">
-                        <img src="~/lib/landing/images/about/tablet_screenshoot14.png" />
-                    </div>
-                </div>
-
-                <div class="about-texts">
-                    <div id="about-text1">
-                        <h4>Личный кабинет депутата </h4>
-                        <p class="text-justify">С другой стороны начало повседневной работы по формированию позиции
-                            требуют от нас анализа модели развития. Равным образом рамки и место обучения кадров
-                            представляет собой интересный эксперимент проверки новых предложений. Товарищи! дальнейшее
-                            развитие различных форм деятельности требуют от нас анализа соответствующий условий
-                            активизации. Товарищи! укрепление и развитие структуры требуют определения и уточнения
-                            новых предложений.</p>
-                    </div>
-                    <div id="about-text2">
-                        <h4>Управляющих компаниях</h4>
-                        <p class="text-justify">С другой стороны начало повседневной работы по формированию позиции
-                            требуют от нас интересный эксперимент проверки новых предложений. Товарищи! дальнейшее
-                            развитие различных форм деятельности требуют от нас анализа соответствующий условий
-                            активизации. Товарищи! укрепление и развитие структуры требуют определения и уточнения
-                            новых предложений.</p>
-                    </div>
-                    <div id="about-text3">
-                        <h4>Поставщика коммунальных услуг</h4>
-                        <p class="text-justify">С другой стороны начало повседневной работы по формированию позиции
-                            требуют от нас интересный эксперимент проверки новых предложений. Товарищи! дальнейшее
-                            развитие различных форм деятельности требуют от нас анализа соответствующий условий
-                            активизации. Товарищи! укрепление и развитие структуры требуют определения и уточнения
-                            новых предложений.</p>
-                    </div>
-                    <div id="about-text4">
-                        <h4>Лицевых счетах</h4>
-                        <p class="text-justify">С другой стороны начало повседневной работы по формированию позиции
-                            требуют от нас интересный эксперимент проверки новых предложений. Товарищи! дальнейшее
-                            развитие различных форм деятельности требуют от нас анализа соответствующий условий
-                            активизации. Товарищи! укрепление и развитие структуры требуют определения и уточнения
-                            новых предложений.</p>
-                    </div>
-                    <div id="about-text5">
-                        <h4>Договорах ресурсоснабжения и управления</h4>
-                        <p class="text-justify">С другой стороны начало повседневной работы по формированию позиции
-                            требуют от нас интересный эксперимент проверки новых предложений. Товарищи! дальнейшее
-                            развитие различных форм деятельности требуют от нас анализа соответствующий условий
-                            активизации. Товарищи! укрепление и развитие структуры требуют определения и уточнения
-                            новых предложений.</p>
-                    </div>
-                    <div id="about-text6">
-                        <h4>Общедомовых и индивидульных приборах учета</h4>
-                        <p class="text-justify">С другой стороны начало повседневной работы по формированию позиции
-                            требуют от нас интересный эксперимент проверки новых предложений. Товарищи! дальнейшее
-                            развитие различных форм деятельности требуют от нас анализа соответствующий условий
-                            активизации. Товарищи! укрепление и развитие структуры требуют определения и уточнения
-                            новых предложений.</p>
-                    </div>
-                    <div id="about-text7">
-                        <h4>Начислениях и оплате за услуги</h4>
-                        <p class="text-justify">С другой стороны начало повседневной работы по формированию позиции
-                            требуют от нас интересный эксперимент проверки новых предложений. Товарищи! дальнейшее
-                            развитие различных форм деятельности требуют от нас анализа соответствующий условий
-                            активизации. Товарищи! укрепление и развитие структуры требуют определения и уточнения
-                            новых предложений.</p>
-                    </div>
-                    <div id="about-text8">
-                        <h4>Жилых домах</h4>
-                        <p class="text-justify">С другой стороны начало повседневной работы по формированию позиции
-                            требуют от нас интересный эксперимент проверки новых предложений. Товарищи! дальнейшее
-                            развитие различных форм деятельности требуют от нас анализа соответствующий условий
-                            активизации. Товарищи! укрепление и развитие структуры требуют определения и уточнения
-                            новых предложений.</p>
-                    </div>
-                    <div id="about-text9">
-                        <h4>Управляющих компаниях</h4>
-                        <p class="text-justify">С другой стороны начало повседневной работы по формированию позиции
-                            требуют от нас интересный эксперимент проверки новых предложений. Товарищи! дальнейшее
-                            развитие различных форм деятельности требуют от нас анализа соответствующий условий
-                            активизации. Товарищи! укрепление и развитие структуры требуют определения и уточнения
-                            новых предложений.</p>
-                    </div>
-                    <div id="about-text10">
-                        <h4>Поставщиках коммунальных услуг</h4>
-                        <p class="text-justify">С другой стороны начало повседневной работы по формированию позиции
-                            требуют от нас интересный эксперимент проверки новых предложений. Товарищи! дальнейшее
-                            развитие различных форм деятельности требуют от нас анализа соответствующий условий
-                            активизации. Товарищи! укрепление и развитие структуры требуют определения и уточнения
-                            новых предложений.</p>
-                    </div>
-                    <div id="about-text11">
-                        <h4>Личный кабинет депутата 11</h4>
-                        <p class="text-justify">С другой стороны начало повседневной работы по формированию позиции
-                            требуют от нас интересный эксперимент проверки новых предложений. Товарищи! дальнейшее
-                            развитие различных форм деятельности требуют от нас анализа соответствующий условий
-                            активизации. Товарищи! укрепление и развитие структуры требуют определения и уточнения
-                            новых предложений.</p>
-                    </div>
-                    <div id="about-text12">
-                        <h4>Личный кабинет депутата 12</h4>
-                        <p class="text-justify">С другой стороны начало повседневной работы по формированию позиции
-                            требуют от нас интересный эксперимент проверки новых предложений. Товарищи! дальнейшее
-                            развитие различных форм деятельности требуют от нас анализа соответствующий условий
-                            активизации. Товарищи! укрепление и развитие структуры требуют определения и уточнения
-                            новых предложений.</p>
-                    </div>
-                    <div id="about-text13">
-                        <h4>Личный кабинет депутата 13</h4>
-                        <p class="text-justify">С другой стороны начало повседневной работы по формированию позиции
-                            требуют от нас интересный эксперимент проверки новых предложений. Товарищи! дальнейшее
-                            развитие различных форм деятельности требуют от нас анализа соответствующий условий
-                            активизации. Товарищи! укрепление и развитие структуры требуют определения и уточнения
-                            новых предложений.</p>
-                    </div>
-                    <div id="about-text14">
-                        <h4>Личный кабинет депутата 14</h4>
-                        <p class="text-justify">С другой стороны начало повседневной работы по формированию позиции
-                            требуют от нас интересный эксперимент проверки новых предложений. Товарищи! дальнейшее
-                            развитие различных форм деятельности требуют от нас анализа соответствующий условий
-                            активизации. Товарищи! укрепление и развитие структуры требуют определения и уточнения
-                            новых предложений.</p>
-                    </div>
-                </div>
+            <div class="main-info">
+                <h1>Закажите дом в октябре</h1>
+                <h2>
+                    <span>Экономия</span>
+                    <br>
+                    <span>до <b>1 014 450</b> руб.</span>
+                </h2>
+                <p>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum nihil</span>
+                    <span>delectus incidunt repellat, nisi ipsa ad, voluptatibus quaerat dolorum at</span>
+                    <span>rerum saepe eaque. Quo corporis quae numquam modi odio tenetur.</span>
+                </p>
+                <button class="details">
+                    Узнать подробности
+                </button>
             </div>
         </div>
 
-    </div>
-</section>
-<div class="gray-blue-triangle"></div>
-
-<section id="integration">
-    <div class="blue-gradient text-center">
         <div class="container">
-            <h1>Модуль интеграции</h1>
-            <h5>
-                Мизинец - великий актер. И он блестяще справился с ролью мелког
-            </h5>
-            <img class="scheme" src="~/lib/landing/images/integration/scheme.png" />
-        </div>
-    </div>
-</section>
-<div class="blue-triangle-down"></div>
+            <div class="examples">
+                <div class="cottage house-image">
+                    <h4>Коттеджи</h4>
+                    <div class="show-details">
+                        <a href="#"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
 
-<section id="feedback" class="container text-center">
-    <h1>Обратная связь</h1>
-    <h5>
-        Не следует, однако забывать, что консультация с широким активом требуют определения и уточнения соответствующий
-        условий активизации. Равным образом начало повседневной работы по формированию позиции представляет собой
-        интересный эксперимент проверки систем массового участия.
-    </h5>
-    <div class="row">
-        <div class="col-sm-5 ">
-            <a data-toggle="modal" data-target="#request-modal" class="btn btn-primary">Заказать коммерческое
-                предложение</a>
-        </div>
-        <div class="col-sm-offset-1 col-sm-6 information">
-            <p>433506, Ульяновская область</p>
-            <p>г. Димитровград, ул. Курчатова, 21</p>
-            <p>Тел.: +7 (8422) 57 27 52</p>
-            <p>E-mail: priemnaya@aisgorod.ru</p>
-        </div>
-    </div>
-</section>
+                <div class="other-buildings house-image">
+                    <div class="houses">
+                        <h4>Дома</h4>
+                        <div class="show-details">
+                            <a href="#"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="bath house-image">
+                        <h4>Бани</h4>
+                        <div class="show-details">
+                            <a href="#"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="building house-image">
+                        <h4>Садовые постройки</h4>
+                        <div class="show-details">
+                            <a href="#"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="village-houses house-image">
+                        <h4>Дачные дома</h4>
+                        <div class="show-details">
+                            <a href="#"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="village-buildings house-image">
+                        <h4>Садовые домики</h4>
+                        <div class="show-details">
+                            <a href="#"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="individual-projects house-image">
+                        <h4>Индивидуальные проекты</h4>
+                        <div class="show-details">
+                            <a href="#"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
 
-<script>
-    $requestModalSent = $("#request-modal-sent");
-    $requestModalSent.modal("show");
-    $(document).on('hide.bs.modal', '#request-modal-sent', function () {
-        window.location.href = $requestModalSent.data('action');
-    });
-</script>
+                <div class="benefits">
+                    <div class="uzor"></div>
+                    <ul>
+                        <li class="benefit">
+                            <div class="benefit-image" style="background-image: url('./images/22years.png')"></div>
+                            <div class="benefit-description">
+                                <h4>22 года на рынке</h4>
+                                <span>За это время мы построили<br> более 196 000 домов и бань</span>
+                            </div>
+                        </li>
+                        <li class="benefit">
+                            <div class="benefit-image" style="background-image: url('./images/22years.png')"></div>
+                            <div class="benefit-description">
+                                <h4>Полный цикл производства</h4>
+                                <span>Мы контролируем весь процес:<br>
+                                    от лесозаготовки до монтажа дома<br>
+                                    на участке</span>
+                            </div>
+                        </li>
+                        <li class="benefit">
+                            <div class="benefit-image" style="background-image: url('./images/22years.png')"></div>
+                            <div class="benefit-description">
+                                <h4>Гарантия до 20 лет</h4>
+                                <span>Мы используем лучшее сырье и лучшее европейское оборудование, на котором
+                                    работают лучшие специалисты</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- <div class="news">
+                <p class="news-title">Новости</p>
+                <div class="data-slick row">
+                    <div class="slide col-md-3 ">
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="news slider-box">
+                <p class="news-title">Новости</p>
+                <!-- лучше сликслайдер -->
+                <div id="prev-slide">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+                <div class="myslider row">
+                    <div class="slider-content current">
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Встречайте: «Сварог» и «Ветлуга» из клееного бруса!
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 1</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Новый дом от «Зодчего», или «Феникс» расправляет крылья
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 2</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Отдыхай в «Карелии»: коттеджи «Карелия» стали дешевле!
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 3</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Встречайте: «Сварог» и «Ветлуга» из клееного бруса!
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 4</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slider-content">
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Встречайте: «Сварог» и «Ветлуга» из клееного бруса!
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 5</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Новый дом от «Зодчего», или «Феникс» расправляет крылья
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 6</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Отдыхай в «Карелии»: коттеджи «Карелия» стали дешевле!
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 7</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Встречайте: «Сварог» и «Ветлуга» из клееного бруса!
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 8</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slider-content">
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Встречайте: «Сварог» и «Ветлуга» из клееного бруса!
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 9</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Новый дом от «Зодчего», или «Феникс» расправляет крылья
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 10</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Отдыхай в «Карелии»: коттеджи «Карелия» стали дешевле!
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 11</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Встречайте: «Сварог» и «Ветлуга» из клееного бруса!
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 12</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="next-slide">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="houses-description">
+                <div class="wooden-houses">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Строительство деревянных домов и бань под ключ</h3>
+                            <p>
+                                Компания располагает выставочными площадками в Москве, Туле и Рязани.
+                                На них каркасные и брусовые дома представлены в полную величину. У каждого посетителя
+                                есть
+                                возможность увидеть уже
+                                готовые постройки из дерева; с помощью менеджеров подобрать оптимальную комплектацию,
+                                узнать цены с учётом действующих
+                                скидок, выбрать и недорого купить наиболее подходящий деревянный дом или баню. Дома
+                                строятся без предоплаты. В ходе
+                                строительства цены не пересматриваются. Специально для заказчиков «Зодчего» разработаны
+                                программы кредитования и
+                                рассрочки. Словом сделано всё, чтобы тысячи людей могли ежегодно воплощать свои мечты о
+                                новом, современном, собственном
+                                доме в жизнь
+                            </p>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+                </div>
+                <div class="country-house">
+                    <div class=" row">
+                        <div class="col-md-offset-6 col-md-6">
+                            <h3>Загородные дома из дерева в Москве</h3>
+                            <p>
+                                Компания располагает выставочными площадками в Москве, Туле и Рязани.
+                                На них каркасные и брусовые дома представлены в полную величину. У каждого посетителя
+                                есть
+                                возможность увидеть уже
+                                готовые постройки из дерева; с помощью менеджеров подобрать оптимальную комплектацию,
+                                узнать цены с учётом действующих
+                                скидок, выбрать и недорого купить наиболее подходящий деревянный дом или баню. Дома
+                                строятся без предоплаты. В ходе
+                                строительства цены не пересматриваются. Специально для заказчиков «Зодчего» разработаны
+                                программы кредитования и
+                                рассрочки. Словом сделано всё, чтобы тысячи людей могли ежегодно воплощать свои мечты о
+                                новом, современном, собственном
+                                доме в жизнь
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul>
+                        <li class="nav-title">Каталог</li>
+                        <li><a href="#">Коттеджи</a></li>
+                        <li><a href="#">Дома</a></li>
+                        <li><a href="#">Дачные дома</a></li>
+                        <li><a href="#">Бани</a></li>
+                        <li><a href="#">Садовые домики</a></li>
+                        <li><a href="#">Садовые постройки</a></li>
+                        <li><a href="#">Бытовки</a></li>
+                        <li><a href="#">Беседки</a></li>
+                        <li><a href="#">Душевые и туалеты</a></li>
+                        <li><a href="#">Индивидуальные проекты</a></li>
+                        <li class="nav-title"><a href="#">Примеры домов</a></li>
+                        <li class="nav-title"><a href="#">Строительство и производство</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li class="nav-title">Достройка и реконструкция</li>
+                        <li><a href="#">Достройка дома</a></li>
+                        <li><a href="#">Пристройка</a></li>
+                        <li><a href="#">Ремонт дома</a></li>
+                        <li><a href="#">Ремонт кровли</a></li>
+                        <li><a href="#">Строительство малых архитектурных форм</a></li>
+                        <li><a href="#">Возведение крыш</a></li>
+                        <li><a href="#">Утепление</a></li>
+                        <li><a href="#">Завершение строительства</a></li>
+                        <li><a href="#">Перепланнировка помещений</a></li>
+                        <li><a href="#">Отделка помещений</a></li>
+                        <li><a href="#">Наружная отделка</a></li>
+                        <li><a href="#">Объединение строений</a></li>
+                        <li><a href="#">Устройство отмостки</a></li>
+                        <li><a href="#">Возведение заборов</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li class="nav-title">Услуги</li>
+                        <li><a href="#">Фундамнты</a></li>
+                        <li><a href="#">Инженерные коммуникации</a></li>
+                        <li><a href="#">Индивидуальное проектирование</a></li>
+                        <li><a href="#">Строительство в кредит</a></li>
+                        <li><a href="#">Земельные участки</a></li>
+                        <li class="nav-title"><a href="#">Контакты</a></li>
+                        <li class="nav-title"><a href="#">О компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Вопросы и ответы</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Партнеры</a></li>
+                        <li><a href="#">Дилеры</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 contacts">
+                    <h1>+7 495 921 33 01</h1>
+                    <div class="cooperation">
+                        <button class="callback">
+                            <i class="fa fa-phone" aria-hidden="true"></i> Обратный звонок
+                        </button>
+                        <button class="question">
+                            <i class="fa fa-question" aria-hidden="true"></i> Задать вопрос
+                        </button>
+                    </div>
+                    <div class="autentification">
+                        <button class="enter">
+                            <i class="fa fa-user" aria-hidden="true"></i> Войти
+                        </button>
+                        <span class="vl"></span>
+                        <button class="register">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i> Зарегистрироваться
+                        </button>
+                    </div>
+                    <div class="social-networks">
+                        <a href="#">
+                            <div class="vk"></div>
+                        </a>
+                        <a href="#">
+                            <div class="ok"></div>
+                        </a>
+                        <a href="#">
+                            <div class="fb"></div>
+                        </a>
+                    </div>
+                    <div class="service">
+                        <p>© 2000-2014 ООО «ЗОДЧИЙ.ру»</p>
+                        <p>Строительство деревянных домов и бань под ключ</p>
+                        <p>Не является публичной офертой</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="slick-slider/slick.min.js"></script>
+<script src="js/slider.js"></script>
+
+</html>
