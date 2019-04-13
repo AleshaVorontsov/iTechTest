@@ -1,58 +1,93 @@
 $(function () {
+    var $dataSlick = null;
+
     var $btnPrev = null;
     var $btnNext = null;
-    var $currentImage = null;
-    var currentImageIndex = null;
-    var $nextImage = null;
-    var nextImageIndex = null;
-    var $prevImage = null;
-    var prevImageIndex = null;
-    var interval = 5000; //интервал смены слайдов
+    var $currentSlide = null;
+    var currentSlideIndex = null;
+    var $prevSlide = null;
+    var prevSlideIndex = null;
+    var $nextSlide = null;
+    var $wrap = null;
+    var $callBtn = null;
+    var $close = null;
+    var nextSlideIndex = null;
+    var delay = 3000; //интервал смены слайдов
+    var interval = null;
 
     $(document).ready(function () {
-        $btnPrev = $('.prev');
-        $btnNext = $('.next');
+        /*$dataSlick = $('.data-slick');
+
+        $dataSlick.slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 3
+        });*/
+
+        $btnPrev = $('#prev-slide');
+        $btnNext = $('#next-slide');
 
         $btnPrev.on('click', _showPrevImage);
         $btnNext.on('click', _showNextImage);
 
-        setInterval(_showNextImage, interval);
+        interval = setInterval(_showNextImage, delay);
+
+        $wrap = $('#wrap');
+        $callBtn = $('#call-btn');
+        $close = $('.close');
+
+        $wrap.on('click', function () { _show('none'); });
+        $close.on('click', function () { _show('none'); });
+        $callBtn.on('click', function () { _show('block'); });
     });
 
+    var _show = function (state) {
+        $('#call-window').css('display', state);
+        $('#wrap').css('display', state);
+    };
+
     var _showPrevImage = function () {
-        $currentImage = $('img.current');
-        currentImageIndex = $currentImage.index();
-        prevImageIndex = currentImageIndex - 1;
-        $prevImage = $('img').eq(prevImageIndex);
+        clearInterval(interval);
+        $currentSlide = $('.myslider .current');
+        currentSlideIndex = $currentSlide.index();
+        prevSlideIndex = currentSlideIndex - 1;
+        $prevSlide = $('.myslider .slider-content').eq(prevSlideIndex);
 
-        $currentImage.fadeOut(1000);
-        $currentImage.removeClass('current');
+        $currentSlide.fadeOut(400);
+        $currentSlide.removeClass('current');
 
-        if (prevImageIndex == - 1) {
-            $('img').each(function () {
-                $(this).fadeOut(1000);
+        if (prevSlideIndex == - 1) {
+            $('.myslider .slider-content').each(function () {
+                $(this).fadeOut(800);
             });
         }
-        $prevImage.fadeIn(1000);
-        $prevImage.addClass('current');
+        $prevSlide.fadeIn(800);
+        $prevSlide.addClass('current');
+        interval = setInterval(_showNextImage, delay);
     };
 
     var _showNextImage = function () {
-        $currentImage = $('img.current');
-        currentImageIndex = $currentImage.index();
-        nextImageIndex = currentImageIndex + 1;
-        $nextImage = $('img').eq(nextImageIndex);
+        clearInterval(interval);
+        $currentSlide = $('.myslider .current');
+        currentSlideIndex = $currentSlide.index();
+        nextSlideIndex = currentSlideIndex + 1;
+        //console.log('nextSlideIndex=' + nextSlideIndex);
+        $nextSlide = $('.myslider .slider-content').eq(nextSlideIndex);
 
-        $currentImage.fadeOut(1000);
-        $currentImage.removeClass('current');
+        $currentSlide.fadeOut(400);
+        let $slides = $('.myslider .slider-content');
+        //console.log('last()=' + ($slides.last().index() + 1));
+        $currentSlide.removeClass('current');
 
-        if (nextImageIndex == ($('img:last').index() + 1)) {
-            $('img').eq(0).fadeIn(1000);
-            $('img').eq(0).addClass('current');
+        if (nextSlideIndex == ($slides.last().index() + 1)) {
+            $slides.eq(0).fadeIn(800);
+            $slides.eq(0).addClass('current');
         }
         else {
-            $nextImage.fadeIn(1000);
-            $nextImage.addClass('current');
+            $nextSlide.fadeIn(800);
+            $nextSlide.addClass('current');
         }
+        interval = setInterval(_showNextImage, delay);
     };
 });

@@ -15,7 +15,6 @@
 body {
   font-family: "HypatiaSansPro";
   font-weight: 400;
-  background: url(../images/slideOne.png) no-repeat top;
 }
 
 body h1,
@@ -48,6 +47,10 @@ body h4 {
   font-size: 15px;
   font-weight: bold;
   line-height: 22px;
+}
+
+header .navbar-brand {
+  height: auto;
 }
 
 header .vnavbar {
@@ -214,30 +217,222 @@ header .contacts .service .fa-search {
   font-size: 14px;
 }
 
+.body-content #wrap {
+  padding: 16px;
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(1, 1, 1, 0.725);
+  z-index: 100;
+  overflow: auto;
+}
+
+.body-content #call-window {
+  padding: 16px;
+  width: 360px;
+  height: 400px;
+  margin: 50px auto;
+  display: none;
+  background: #fff;
+  z-index: 200;
+  position: fixed;
+  right: 50px;
+  top: 0;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.body-content #call-window .close {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.body-content #call-window img {
+  margin-top: 40px;
+  width: 260px;
+}
+
+.body-content .help-buttons {
+  position: fixed;
+  right: 0;
+  margin-top: 30px;
+}
+
+.body-content .help-buttons a {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  background-color: #fadb44;
+  color: #ffffff;
+  font-size: 28px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.body-content .help-buttons a i {
+  vertical-align: bottom;
+}
+
+.body-content .help-buttons #list-btn {
+  margin-top: 54px;
+}
+
+.body-content .help-buttons #calck-btn {
+  margin-top: 108px;
+}
+
 .body-content .slider {
-  margin-top: 140px;
+  width: 100%;
+  height: 797px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  z-index: -1;
+  will-change: transform;
 }
 
 .body-content .slider .slide {
+  width: 100%;
+  height: 797px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation-name: slid;
+          animation-name: slid;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.body-content .slider h1 {
+  background-color: red;
+  height: 30px;
+}
+
+.body-content .slider .slide1,
+.body-content .slider .slide2,
+.body-content .slider .slide3,
+.body-content .slider .slide4 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body-content .slider .slide1 {
+  background-image: url(https://givotniymir.ru/wp-content/uploads/2017/01/sinij-popugaj-obraz-zhizni-i-sreda-obitaniya-sinego-popugaya-11.jpg);
+  -webkit-animation-delay: 7.5s;
+          animation-delay: 7.5s;
+}
+
+.body-content .slider .slide2 {
+  background-image: url(https://cdn1.img.inosmi.ru/images/23848/10/238481016.jpg);
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.body-content .slider .slide3 {
+  background-image: url(../images/slideTwo.png);
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.body-content .slider .slide4 {
+  background-image: url(../images/slideOne.png);
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+@-webkit-keyframes slid {
+  from {
+    top: 0;
+    left: 0;
+  }
+  12.5% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  25% {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+  36% {
+    -webkit-transform: translate(-100%, 797px);
+            transform: translate(-100%, 797px);
+  }
+  37% {
+    -webkit-transform: translate(100%, 797px);
+            transform: translate(100%, 797px);
+  }
+  87.5% {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  to {
+    -webkit-transform: 0px, 0px;
+            transform: 0px, 0px;
+  }
+}
+
+@keyframes slid {
+  from {
+    top: 0;
+    left: 0;
+  }
+  12.5% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  25% {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+  36% {
+    -webkit-transform: translate(-100%, 797px);
+            transform: translate(-100%, 797px);
+  }
+  37% {
+    -webkit-transform: translate(100%, 797px);
+            transform: translate(100%, 797px);
+  }
+  87.5% {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  to {
+    -webkit-transform: 0px, 0px;
+            transform: 0px, 0px;
+  }
+}
+
+.body-content .main-info {
+  margin-top: 140px;
   width: 400px;
 }
 
-.body-content .slider .slide h1 {
+.body-content .main-info h1 {
   color: #ffffff;
 }
 
-.body-content .slider .slide h2 span {
+.body-content .main-info h2 span {
   padding: 4px;
   color: #333333;
   background-color: #fadb44;
 }
 
-.body-content .slider .slide p span {
+.body-content .main-info p span {
   line-height: 21px;
   background-color: #ffffff;
 }
 
-.body-content .slider .slide .details {
+.body-content .main-info .details {
   padding-top: 2px;
   outline: none;
   border: 3px solid #ffffff;
@@ -390,6 +585,141 @@ header .contacts .service .fa-search {
   color: #fadb44;
 }
 
+.body-content .news {
+  position: relative;
+  margin-top: 40px;
+  padding: 6px;
+  border: 3px solid #fadb44;
+  text-transform: uppercase;
+  height: 150px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.body-content .news .news-title {
+  margin-top: 10px;
+  text-align: center;
+  color: #64697e;
+  font-weight: bold;
+}
+
+.body-content .news .myslider {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.body-content .news .myslider .slider-content {
+  margin-top: 100px;
+}
+
+.body-content .news .myslider .slider-content.current {
+  margin-top: 0px;
+}
+
+.body-content .news .myslider .slide {
+  outline: none;
+}
+
+.body-content .news .myslider .slide a {
+  outline: none;
+  text-decoration: none;
+}
+
+.body-content .news .myslider .slide a .house-example-image {
+  margin-right: 8px;
+  float: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 74px;
+  min-height: 74px;
+  border-radius: 4px;
+}
+
+.body-content .news .myslider .slide a .house-example-description p,
+.body-content .news .myslider .slide a .house-example-description span {
+  font-size: 11px;
+  line-height: 19px;
+  color: #a4a8b6;
+}
+
+.body-content .news .myslider .slide a .house-example-description p {
+  margin-bottom: 0px;
+  font-weight: bold;
+  color: #1a273e;
+}
+
+.body-content .news .myslider .slide a .house-example-description span {
+  text-transform: none;
+}
+
+.body-content .news #prev-slide,
+.body-content .news #next-slide {
+  position: absolute;
+  top: 65px;
+  display: block;
+  cursor: pointer;
+  font-family: FontAwesome;
+  opacity: 0.9;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+.body-content .news #prev-slide {
+  left: 10px;
+}
+
+.body-content .news #prev-slide:before {
+  font-size: 14px;
+  color: #a4a8b6;
+}
+
+.body-content .news #next-slide {
+  right: 10px;
+}
+
+.body-content .news #next-slide:before {
+  font-size: 14px;
+  color: #a4a8b6;
+}
+
+.body-content .houses-description {
+  margin-top: 40px;
+}
+
+.body-content .houses-description .wooden-houses,
+.body-content .houses-description .country-house {
+  height: 370px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/house-background.png");
+  border-bottom: 3px solid #fadb44;
+  -webkit-box-shadow: 0px 3px 6px -1px #333333;
+  box-shadow: 0px 3px 6px -1px #333333;
+}
+
+.body-content .houses-description .wooden-houses {
+  padding-right: 20px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.body-content .houses-description .wooden-houses .row {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.body-content .houses-description .country-house {
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
 footer {
   margin-top: 45px;
   padding-top: 30px;
@@ -471,6 +801,10 @@ footer .contacts .autentification .vl {
 footer .contacts .social-networks {
   margin-top: 20px;
   text-align: right;
+}
+
+footer .contacts .social-networks a:hover {
+  text-decoration: none;
 }
 
 footer .contacts .social-networks .vk,

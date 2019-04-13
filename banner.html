@@ -4,6 +4,10 @@
 <head>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="slick-slider/slick.css" />
+    <link rel="stylesheet" href="slick-slider/slick-theme.css" />
+
     <link rel="stylesheet" href="css/inner.css">
 
     <meta charset="utf-8" />
@@ -106,26 +110,49 @@
     </header>
 
     <div class="body-content">
-        <input type="image" src="submit.gif" alt="Submit" width="48" height="48" style="position: fixed; right: 0; z-index: 20;">
+        <div id="wrap"></div>
+        <div id="call-window">
+            <div class="close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></div>
+            <h1>322-223-322</h1>
+            <img src="https://i.ytimg.com/vi/jvJ--fZM9g4/maxresdefault.jpg">
+        </div>
+        <div class="help-buttons">
+            <a href="#" id="call-btn">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </a>
+            <a href="#" id="list-btn">
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+            <a href="#" id="calck-btn">
+                <i class="fa fa-calculator" aria-hidden="true"></i>
+            </a>
+        </div>
 
         <div class="slider">
-            <div class="container">
-                <div class="slide">
-                    <h1>Закажите дом в октябре</h1>
-                    <h2>
-                        <span>Экономия</span>
-                        <br>
-                        <span>до <b>1 014 450</b> руб.</span>
-                    </h2>
-                    <p>
-                        <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum nihil</span>
-                        <span>delectus incidunt repellat, nisi ipsa ad, voluptatibus quaerat dolorum at</span>
-                        <span>rerum saepe eaque. Quo corporis quae numquam modi odio tenetur.</span>
-                    </p>
-                    <button class="details">
-                        Узнать подробности
-                    </button>
-                </div>
+            <div class="slide slide1"></div>
+            <div class="slide slide2"></div>
+            <div class="slide slide3"></div>
+            <div class="slide slide4">
+                <!-- <h1></h1> -->
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="main-info">
+                <h1>Закажите дом в октябре</h1>
+                <h2>
+                    <span>Экономия</span>
+                    <br>
+                    <span>до <b>1 014 450</b> руб.</span>
+                </h2>
+                <p>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum nihil</span>
+                    <span>delectus incidunt repellat, nisi ipsa ad, voluptatibus quaerat dolorum at</span>
+                    <span>rerum saepe eaque. Quo corporis quae numquam modi odio tenetur.</span>
+                </p>
+                <button class="details">
+                    Узнать подробности
+                </button>
             </div>
         </div>
 
@@ -209,9 +236,253 @@
             </div>
         </div>
 
-        <div class="news"></div>
+        <div class="container">
+            <!-- <div class="news">
+                <p class="news-title">Новости</p>
+                <div class="data-slick row">
+                    <div class="slide col-md-3 ">
+                    </div>
+                </div>
+            </div> -->
 
-        <div class="house-description"></div>
+            <div class="news slider-box">
+                <p class="news-title">Новости</p>
+                <!-- лучше сликслайдер -->
+                <div id="prev-slide">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+                <div class="myslider row">
+                    <div class="slider-content current">
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Встречайте: «Сварог» и «Ветлуга» из клееного бруса!
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 1</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Новый дом от «Зодчего», или «Феникс» расправляет крылья
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 2</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Отдыхай в «Карелии»: коттеджи «Карелия» стали дешевле!
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 3</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Встречайте: «Сварог» и «Ветлуга» из клееного бруса!
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 4</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slider-content">
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Встречайте: «Сварог» и «Ветлуга» из клееного бруса!
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 5</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Новый дом от «Зодчего», или «Феникс» расправляет крылья
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 6</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Отдыхай в «Карелии»: коттеджи «Карелия» стали дешевле!
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 7</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Встречайте: «Сварог» и «Ветлуга» из клееного бруса!
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 8</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slider-content">
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Встречайте: «Сварог» и «Ветлуга» из клееного бруса!
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 9</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Новый дом от «Зодчего», или «Феникс» расправляет крылья
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 10</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Отдыхай в «Карелии»: коттеджи «Карелия» стали дешевле!
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 11</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide col-md-3">
+                            <a href="#">
+                                <div class="house-example-image" style="background-image: url('./images/22years.png')"></div>
+                                <div class="house-example-description">
+                                    <p>
+                                        Встречайте: «Сварог» и «Ветлуга» из клееного бруса!
+                                    </p>
+                                    <span>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <i>20 сен. 12</i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="next-slide">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="houses-description">
+                <div class="wooden-houses">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Строительство деревянных домов и бань под ключ</h3>
+                            <p>
+                                Компания располагает выставочными площадками в Москве, Туле и Рязани.
+                                На них каркасные и брусовые дома представлены в полную величину. У каждого посетителя
+                                есть
+                                возможность увидеть уже
+                                готовые постройки из дерева; с помощью менеджеров подобрать оптимальную комплектацию,
+                                узнать цены с учётом действующих
+                                скидок, выбрать и недорого купить наиболее подходящий деревянный дом или баню. Дома
+                                строятся без предоплаты. В ходе
+                                строительства цены не пересматриваются. Специально для заказчиков «Зодчего» разработаны
+                                программы кредитования и
+                                рассрочки. Словом сделано всё, чтобы тысячи людей могли ежегодно воплощать свои мечты о
+                                новом, современном, собственном
+                                доме в жизнь
+                            </p>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+                </div>
+                <div class="country-house">
+                    <div class=" row">
+                        <div class="col-md-offset-6 col-md-6">
+                            <h3>Загородные дома из дерева в Москве</h3>
+                            <p>
+                                Компания располагает выставочными площадками в Москве, Туле и Рязани.
+                                На них каркасные и брусовые дома представлены в полную величину. У каждого посетителя
+                                есть
+                                возможность увидеть уже
+                                готовые постройки из дерева; с помощью менеджеров подобрать оптимальную комплектацию,
+                                узнать цены с учётом действующих
+                                скидок, выбрать и недорого купить наиболее подходящий деревянный дом или баню. Дома
+                                строятся без предоплаты. В ходе
+                                строительства цены не пересматриваются. Специально для заказчиков «Зодчего» разработаны
+                                программы кредитования и
+                                рассрочки. Словом сделано всё, чтобы тысячи людей могли ежегодно воплощать свои мечты о
+                                новом, современном, собственном
+                                доме в жизнь
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
@@ -292,13 +563,13 @@
                         </button>
                     </div>
                     <div class="social-networks">
-                        <a>
+                        <a href="#">
                             <div class="vk"></div>
                         </a>
-                        <a>
+                        <a href="#">
                             <div class="ok"></div>
                         </a>
-                        <a>
+                        <a href="#">
                             <div class="fb"></div>
                         </a>
                     </div>
@@ -314,8 +585,9 @@
 
 </body>
 
-<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-<!-- <script src="js/slider.js"></script> -->
+<script src="slick-slider/slick.min.js"></script>
+<script src="js/slider.js"></script>
 
 </html>

@@ -14,7 +14,6 @@
 body {
   font-family: "HypatiaSansPro";
   font-weight: 400;
-  background: url(../images/slideOne.png) no-repeat top;
 
   h1,
   h2,
@@ -50,6 +49,10 @@ body {
 }
 
 header {
+  .navbar-brand {
+    height: auto;
+  }
+
   .vnavbar {
     overflow: hidden;
 
@@ -218,40 +221,184 @@ header {
 }
 
 .body-content {
+  #wrap {
+    padding: 16px;
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(1, 1, 1, 0.725);
+    z-index: 100;
+    overflow: auto;
+  }
+
+  #call-window {
+    padding: 16px;
+    width: 360px;
+    height: 400px;
+    margin: 50px auto;
+    display: none;
+    background: #fff;
+    z-index: 200;
+    position: fixed;
+    right: 50px;
+    top: 0;
+    text-align: center;
+    opacity: 0.8;
+
+    .close {
+      cursor: pointer;
+      opacity: 0.6;
+    }
+
+    img {
+      margin-top: 40px;
+      width: 260px;
+    }
+  }
+
+  .help-buttons {
+    position: fixed;
+    right: 0;
+    margin-top: 30px;
+
+    a {
+      width: 50px;
+      height: 50px;
+      position: fixed;
+      right: 0;
+      background-color: #fadb44;
+      color: #ffffff;
+      font-size: 28px;
+      text-align: center;
+      cursor: pointer;
+
+      i {
+        vertical-align: bottom;
+      }
+    }
+
+    #list-btn {
+      margin-top: 54px;
+    }
+
+    #calck-btn {
+      margin-top: 108px;
+    }
+  }
+
   .slider {
-    margin-top: 140px;
+    width: 100%;
+    height: 797px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: -1;
+    will-change: transform; //?
 
     .slide {
-      width: 400px;
+      width: 100%;
+      height: 797px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation-name: slid;
+      animation-duration: 10s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
 
-      h1 {
-        color: #ffffff;
+    h1 {
+      background-color: red;
+      height: 30px;
+    }
+
+    .slide1,
+    .slide2,
+    .slide3,
+    .slide4 {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .slide1 {
+      background-image: url(https://givotniymir.ru/wp-content/uploads/2017/01/sinij-popugaj-obraz-zhizni-i-sreda-obitaniya-sinego-popugaya-11.jpg);
+      animation-delay: 7.5s;
+    }
+    .slide2 {
+      background-image: url(https://cdn1.img.inosmi.ru/images/23848/10/238481016.jpg);
+      animation-delay: 5s;
+    }
+    .slide3 {
+      background-image: url(../images/slideTwo.png);
+      animation-delay: 2.5s;
+    }
+    .slide4 {
+      background-image: url(../images/slideOne.png);
+      animation-delay: 0s;
+    }
+
+    @keyframes slid {
+      from {
+        top: 0;
+        left: 0;
       }
-
-      h2 {
-        span {
-          padding: 4px;
-          color: #333333;
-          background-color: #fadb44;
-        }
+      12.5% {
+        transform: translate(0px, 0px);
       }
-
-      p span {
-        line-height: 21px;
-        background-color: #ffffff;
+      25% {
+        transform: translate(-100%, 0);
       }
+      36% {
+        transform: translate(-100%, 797px);
+      }
+      37% {
+        transform: translate(100%, 797px);
+      }
+      87.5% {
+        transform: translate(100%, 0);
+      }
+      to {
+        transform: (0px, 0px);
+      }
+    }
+  }
 
-      .details {
-        padding-top: 2px;
-        outline: none;
-        border: 3px solid #ffffff;
-        border-radius: 14px;
+  .main-info {
+    margin-top: 140px;
+    width: 400px;
+
+    h1 {
+      color: #ffffff;
+    }
+
+    h2 {
+      span {
+        padding: 4px;
+        color: #333333;
         background-color: #fadb44;
-        text-transform: uppercase;
-        font-size: 12px;
-        line-height: 22px;
-        width: 230px;
       }
+    }
+
+    p span {
+      line-height: 21px;
+      background-color: #ffffff;
+    }
+
+    .details {
+      padding-top: 2px;
+      outline: none;
+      border: 3px solid #ffffff;
+      border-radius: 14px;
+      background-color: #fadb44;
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 22px;
+      width: 230px;
     }
   }
 
@@ -359,7 +506,6 @@ header {
           }
 
           .benefit-description {
-            //margin-right: 10px;
             color: #333333;
             line-height: 14px;
 
@@ -391,6 +537,183 @@ header {
       a {
         color: #fadb44;
       }
+    }
+  }
+
+  .news {
+    position: relative;
+    margin-top: 40px;
+    padding: 6px;
+    border: 3px solid #fadb44;
+    text-transform: uppercase;
+    height: 150px;
+    display: inline-block;
+    overflow: hidden;
+
+    .news-title {
+      margin-top: 10px;
+      text-align: center;
+      color: #64697e;
+      font-weight: bold;
+    }
+
+    //.data-slick
+    .myslider {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .slider-content {
+        margin-top: 100px;
+
+        &.current {
+          margin-top: 0px;
+        }
+      }
+
+      .slide {
+        outline: none;
+
+        a {
+          outline: none;
+          text-decoration: none;
+
+          .house-example-image {
+            margin-right: 8px;
+            float: left;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-width: 74px;
+            min-height: 74px;
+            border-radius: 4px;
+          }
+
+          .house-example-description {
+            p,
+            span {
+              font-size: 11px;
+              line-height: 19px;
+              color: #a4a8b6;
+            }
+
+            p {
+              margin-bottom: 0px;
+              font-weight: bold;
+              color: #1a273e;
+            }
+
+            span {
+              text-transform: none;
+            }
+          }
+        }
+      }
+    }
+
+    #prev-slide,
+    #next-slide {
+      position: absolute;
+      top: 65px;
+      display: block;
+      cursor: pointer;
+      font-family: FontAwesome;
+      opacity: 0.9;
+      z-index: 10;
+      border-radius: 5px;
+    }
+
+    #prev-slide {
+      left: 10px;
+
+      &:before {
+        font-size: 14px;
+        color: #a4a8b6;
+      }
+    }
+
+    #next-slide {
+      right: 10px;
+
+      &:before {
+        font-size: 14px;
+        color: #a4a8b6;
+      }
+    }
+
+    ///styles for slickslider buttons
+    // .slick-prev {
+    //   left: 10px;
+
+    //   &:before {
+    //     content: "\f053";
+    //     font-family: "FontAwesome";
+    //     font-size: 14px;
+    //     color: #a4a8b6;
+    //   }
+    // }
+
+    // .slick-next {
+    //   right: 10px;
+
+    //   &:before {
+    //     content: "\f054";
+    //     font-family: FontAwesome;
+    //     font-size: 14px;
+    //     color: #a4a8b6;
+    //   }
+    // }
+
+    // .slick-dots {
+    //   .slick-active button:before {
+    //     font-size: 10px;
+    //   }
+
+    //   button:before {
+    //     font-size: 8px;
+    //     content: "\f0c8";
+    //     font-family: "FontAwesome";
+    //     color: #1a273e;
+    //   }
+    // }
+  }
+
+  .houses-description {
+    margin-top: 40px;
+
+    .wooden-houses,
+    .country-house {
+      height: 370px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../images/house-background.png");
+      border-bottom: 3px solid #fadb44;
+      -webkit-box-shadow: 0px 3px 6px -1px rgba(51, 51, 51, 1);
+      -moz-box-shadow: 0px 3px 6px -1px rgba(51, 51, 51, 1);
+      box-shadow: 0px 3px 6px -1px rgba(51, 51, 51, 1);
+    }
+
+    .wooden-houses {
+      padding-right: 20px;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+
+      .row {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+      }
+    }
+
+    .country-house {
+      margin-top: 20px;
+      padding-right: 20px;
     }
   }
 }
@@ -474,6 +797,10 @@ footer {
     .social-networks {
       margin-top: 20px;
       text-align: right;
+
+      a:hover {
+        text-decoration: none;
+      }
 
       .vk,
       .ok,
